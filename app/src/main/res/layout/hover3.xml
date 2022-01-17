@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/content3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#66000000"
+        android:padding="10dp"
+        android:text="태안 코끼리수산, 솔치킨"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/phone3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="#D9F6FA"
+            android:src="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/location3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="#EEFFDA"
+            android:src="@drawable/ic_baseline_map_24" />
+
+        <ImageView
+            android:id="@+id/menu3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFF0DA"
+            android:src="@drawable/menuview" />
+    </LinearLayout>
+</RelativeLayout>

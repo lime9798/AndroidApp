@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color1"
+    android:orientation="vertical"
+    tools:context=".fragment.FirstFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+<!--
+            <io.github.florent37.shapeofview.shapes.RoundRectView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:elevation="4dp"
+                app:shape_roundRect_borderColor="@android:color/black"
+                app:shape_roundRect_borderWidth="2dp"
+                app:shape_roundRect_bottomLeftRadius="10dp"
+                app:shape_roundRect_bottomRightRadius="10dp"
+                app:shape_roundRect_topLeftRadius="10dp"
+                app:shape_roundRect_topRightRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/airfield">
+
+                </ImageView>
+
+            </io.github.florent37.shapeofview.shapes.RoundRectView>
+-->
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="6dp"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderStartAutoCycle="true"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="20dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:text="서산캠 주소: 충청남도 서산시 해미면 한서1로 46"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:text="비행장 주소: 충남 태안군 남면 곰섬로 236-49 한서대학교항공학부"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="비행장 버스 시간표(비행장, 태안터미널)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bus"
+                                    tools:ignore="SpeakableTextPresentCheck" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="학교 버스 시간표(서산캠, 타 지역)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/busstation"
+                                    tools:ignore="SpeakableTextPresentCheck" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="학교 버스 예매 사이트"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/busstop"
+                                    tools:ignore="SpeakableTextPresentCheck" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="태안비행장 카풀 오픈챗링크"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/carpool1"
+                                    tools:ignore="SpeakableTextPresentCheck" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <TextView
+                                    android:id="@+id/textView7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="서산캠퍼스 카풀 오픈챗링크"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/linecolor">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/carpool2"
+                                    tools:ignore="SpeakableTextPresentCheck" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
